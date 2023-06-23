@@ -1,21 +1,8 @@
-import React, {useState} from 'react';
 
-function App() {
-  const [projects, setProjects] = useState([]);
-  function handleAddProject(){
-    setProjects([...projects, `Novo projeto ${Date.now()}`])
-  }
-  
+export function App() {
+
   return (
-    <>
-      <header>Conteúdo da Home</header>
-      <main>
-        <ul>
-          {projects.map(item => <List key=(item)>(item)</List)}
-        </ul>
-      </main>
-    <>
+      <h1>opa</h1>
   )
 }
 
-export default App
